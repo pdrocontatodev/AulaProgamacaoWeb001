@@ -4,20 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro Online</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Usuário da ONG</h1>
         <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="Projetos.html">Projetos</a></li>
-                <li><a href="Cadastro.html">Cadastro</a></li>
+            <div class="logo">&#128153; Voluntários</div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul id="navMenu">
+                <li><a href="index.html" class="active">Início</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="cadastro.html">Seja Voluntário</a></li>
+
             </ul>
         </nav>
-
     </header>
-    <main>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Transforme Vidas com Voluntariado</h1>
+            <p>Somos uma organização dedicada à inclusão social e ao atendimento de famílias. Junte-se a nós e faça a diferença!</p>
+            <a href="cadastro.html" class="btn-primary">Quero Ser Voluntário</a>
+        </div>
+    </section>
+    
         <section>
             <h2>Quem somos</h2>
             <p>Somos uma organização sem fins lucrativos que atua com animais abandonados</p>
@@ -44,5 +55,6 @@
         <p>&copy; 2026 ONG Pedro. Todos os direitos reservados.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
